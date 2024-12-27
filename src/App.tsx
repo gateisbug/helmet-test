@@ -22,7 +22,7 @@ function App() {
           content='https://raw.githubusercontent.com/gateisbug/alit/refs/heads/master/public/assets/og-image.png'
         />
 
-        <title>(24-12-31) 장비 설명회.Web</title>
+        <title>(24-12-31) 장비 설명회2.Web</title>
       </Helmet>
       <div>
         <a href="https://vite.dev" target="_blank">
