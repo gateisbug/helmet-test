@@ -8,7 +8,6 @@ function App2() {
   return (
     <>
       <Helmet>
-        {/* @TODO: [2.5.0] 버전업 시 수정 */}
         <meta
           name='description'
           content='함순이 리스트. 마지막 업뎃:24-12-31. 함순이 리스트 추가'

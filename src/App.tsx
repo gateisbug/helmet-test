@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <Helmet>
-        {/* @TODO: [2.5.0] 버전업 시 수정 */}
         <meta
           name='description'
           content='장비설명회 웹버전. 마지막 업뎃:24-12-31. UI/UX 수정'
