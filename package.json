@@ -1,18 +1,22 @@
 {
+  "homepage": "https://gateisbug.github.io/helmet-test/",
   "name": "helmet-test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "rm -rf ./build && tsc && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.1"
+    "react-router-dom": "^6.26.1",
+    "react-helmet-async": "^2.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.18",
