@@ -1,7 +1,15 @@
-import reactLogo from './assets/react.svg'
+import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import '../App.css'
 import {Helmet} from 'react-helmet-async';
+
+export const getStaticProps = () => ({
+  meta: {
+    title: '(24-12-31) 장비 설명회2.Web',
+    description: '장비설명회 웹버전. 마지막 업뎃:24-12-31. UI/UX 수정',
+    ogImage: 'https://raw.githubusercontent.com/gateisbug/alit/refs/heads/master/public/assets/og-image.png',
+  },
+});
 
 function App() {
   return (

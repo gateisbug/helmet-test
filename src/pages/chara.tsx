@@ -1,6 +1,14 @@
 import { useState } from 'react'
-import './App.css'
+import '../App.css'
 import {Helmet} from 'react-helmet-async';
+
+export const getStaticProps = () => ({
+  meta: {
+    title: '(24-12-31) 함순이 리스트.Web',
+    description: '함순이 리스트. 마지막 업뎃:24-12-31. 함순이 리스트 추가',
+    ogImage: 'https://raw.githubusercontent.com/gateisbug/alit/refs/heads/master/public/assets/og-image.png',
+  },
+});
 
 function App2() {
   const [count, setCount] = useState(0)

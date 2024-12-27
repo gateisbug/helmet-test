@@ -5,4 +5,13 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   base: '/helmet-test/',
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        item: 'item.html',
+        chara: 'chara.html',
+      },
+    },
+  },
 })

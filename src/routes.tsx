@@ -5,8 +5,8 @@ import {
   Navigate,
 } from 'react-router-dom'
 import RootLayout from './layout.tsx';
-import App from './App.tsx';
-import App2 from './App2.tsx';
+import App from './pages/item.tsx';
+import App2 from './pages/chara.tsx';
 
 const routes = createRoutesFromElements(
   <Route path='/' element={<RootLayout />}>
