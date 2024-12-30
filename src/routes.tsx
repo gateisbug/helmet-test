@@ -12,7 +12,7 @@ const routes = createRoutesFromElements(
   <Route path='/' element={<RootLayout />}>
     <Route index element={<Navigate to='item' replace />} />
     <Route path='item' element={<App />} />
-    <Route path='chara' element={<App2 />} />
+    <Route path='character' element={<App2 />} />
   </Route>,
 )
 

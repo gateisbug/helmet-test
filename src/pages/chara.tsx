@@ -1,47 +1,38 @@
-import { useState } from 'react'
 import '../App.css'
 import {Helmet} from 'react-helmet-async';
+import {Link} from 'react-router-dom';
 
-export const getStaticProps = () => ({
-  meta: {
-    title: '(24-12-31) 함순이 리스트.Web',
-    description: '함순이 리스트. 마지막 업뎃:24-12-31. 함순이 리스트 추가',
-    ogImage: 'https://raw.githubusercontent.com/gateisbug/alit/refs/heads/master/public/assets/og-image.png',
-  },
-});
+// export const getStaticProps = () => ({
+//   meta: {
+//     title: '(24-12-31) 함순이 리스트.Web',
+//     description: '함순이 리스트. 마지막 업뎃:24-12-31. 함순이 리스트 추가',
+//     ogImage: 'https://raw.githubusercontent.com/gateisbug/alit/refs/heads/master/public/assets/og-image.png',
+//   },
+// });
 
 function App2() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Helmet>
         <meta
           name='description'
-          content='함순이 리스트. 마지막 업뎃:24-12-31. 함순이 리스트 추가'
+          content='Character Page description'
         />
-        <meta property='og:site_name' content='함순이 리스트' />
-        <meta property='og:title' content='함순이 리스트' />
         <meta
           property='og:description'
-          content='마지막 업뎃:24-12-31. 함순이 리스트 추가'
+          content='Character Page og:description'
         />
+        <meta property='og:site_name' content='Character Page og:site_name'/>
+        <meta property='og:title' content='Character Page og:title'/>
         <meta
           property='og:image'
           content='https://raw.githubusercontent.com/gateisbug/alit/refs/heads/master/public/assets/og-image.png'
         />
 
-        <title>(24-12-31) 함순이 리스트.Web</title>
+        <title>Character Page</title>
       </Helmet>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <h1>Character Page</h1>
+      <Link to='/item'>to Item Page</Link>
     </>
   )
 }
